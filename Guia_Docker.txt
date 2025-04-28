@@ -1,0 +1,32 @@
+
+# docker images 
+Ver las imagenes de Docker creadas
+
+# docker build -t primer_proyecto .
+docker build: le decimos a Docker que queremos construir una imagen.
+-t primer_proyecto: le ponemos un nombre a tu imagen (primer_proyecto)
+. : le decimos que use el Dockerfile que está en la carpeta actual ( . Significa "aquí")
+
+# docker run -d -p 5000:5000 --name mi_contenedor_flask primer_proyecto
+-d : Ejecuta el contenedor en segundo plano (detached).
+-p 5000:5000 : Mapea el puerto 5000 de tu máquina al puerto 5000 del contenedor.
+--name mi_contenedor_flask : Le da un nombre al contenedor para facilitar su gestión.
+primer-proyecto : Es la imagen que acabas de crear
+
+# docker ps
+Ver contenedores corriendo
+
+# docker ps -a
+Ver contenedores creados pero detenidos
+
+# docker rmi nombre_imagen
+Eliminar una imagen de docker
+
+# docker rm nombre_contenedor
+Eliminar contenedor de docker
+
+# docker stop nombre_contenedor
+Detener un contenedor
+
+# nota: Si cree la imagen en Primer_proyecto debo ejecutar el contenedor dentro 
+de la misma carpeta o no va a encontrar el archivo que necesito que se ejecute
