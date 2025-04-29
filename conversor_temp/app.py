@@ -9,6 +9,7 @@ def home(): # Con flask no tengo que poner los argumentos dentro de los parentes
 
     if valor_str is None or unidad is None:
         return "Por favor proporciona los parámetros 'valor' y 'unidad' en la URL."
+    
     valor = float(valor_str)
 
     if unidad == 'C':
