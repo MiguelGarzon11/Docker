@@ -9,8 +9,7 @@
     <h2>Conversor de Unidades de medida</h2>
     <from action="/procesar" method="POST">
         <label for="valor">Valor:</label>
-        <input type="text" id="valor" name="valor" required>
-        <br><br>
+        <input type="text" id="valor" name="valor" required> 
         <label for="unidad">Unidad:</label>
         <input type="text" id="unidad" name="unidad" required>
         <br><br>
@@ -22,5 +21,8 @@
         <br><br>
         <button type="submit">Convertir</button>
     </from>
+    {% if resultado %}
+        <h2>{{ resultado }}</h2>
+    {% endif %}
 </body>
 </html>
