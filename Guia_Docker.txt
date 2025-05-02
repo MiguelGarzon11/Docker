@@ -31,3 +31,5 @@ Detener un contenedor
 # nota: Si cree la imagen en Primer_proyecto debo ejecutar el contenedor dentro 
 de la misma carpeta o no va a encontrar el archivo que necesito que se ejecute
 
+# docker run -it -p 5000:5000 -v $(pwd):/app -w /app python:3.12 bash -c "pip install flask && flask --app app run --host=0.0.0.0"
+Iniciar contenedor que se inicia solo

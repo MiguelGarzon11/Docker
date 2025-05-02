@@ -1,0 +1,104 @@
+:root {
+	--black: rgba(0, 0, 0, 0.384);
+	--white: white;
+}
+
+body {
+	background-color: var(--black);
+	color: white;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	padding: 2em;
+}
+
+h3 {
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 0.5em;
+	font-size: 1.5rem;
+}
+
+form {
+	display: inline-block;
+	text-align: left;
+	background: rgba(166, 238, 228, 0.712);
+	padding: 2em;
+	border-radius: 0.5em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+	display: block;
+	margin-top: 1em;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+form input[type="text"] {
+	display: block;
+	width: 300px;
+	padding: 1em;
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
+	border: 1px solid rgba(128, 128, 128, 0.575);
+	border-radius: 0.35em;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+form input[type="text"]:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+}
+
+form input[type="radio"] {
+	display: inline-block;
+	margin: 1.5rem 0.5em 0.5em 1.5rem;
+	width: 18px;
+	height: 18px;
+	accent-color: rgb(94, 92, 92);
+	cursor: pointer;
+}
+
+form input[type="radio"]:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+}
+
+form button[type="submit"] {
+	display: block;
+	width: 250px;
+	height: 50px;
+	padding: 0.7em;
+	margin: 1em auto 0;
+	font-size: 1em;
+	background: rgb(208, 235, 227);
+	color: rgb(94, 92, 92);
+	border: none;
+	border-radius: 0.5em;
+	cursor: pointer;
+	font-family: bold;
+	text-align: center;
+	line-height: 25px;
+}
+
+form button[type="submit"]:hover {
+	background: rgb(163, 163, 163);
+	color: white;
+	box-shadow: 0 0 8px rgba(255, 255, 255, 0.486);
+}
+
+p {
+	font-size: 1.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+	margin-top: 1.5rem;
+	margin-bottom: 2rem;
+	color: rgb(93, 199, 167);
+	text-shadow: 
+		-1px -1px 0 rgba(255, 255, 255, 0.400),  
+		1px -1px 0 rgba(255, 255, 255, 0.400),
+   		-1px  1px 0 rgba(255, 255, 255, 0.400),
+		1px  1px 0 rgba(255, 255, 255, 0.400);
+}

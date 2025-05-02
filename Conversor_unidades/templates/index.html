@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8"
-    <title>Conversor de unidades de medida</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css')}}">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
 </head>
 <body>
     <h2>Conversor de Unidades de medida</h2>
-    <from action="/procesar" method="POST">
-        <label for="valor">Valor:</label>
+    <form action="/procesar" method="POST">
+        <label for="valor">Valor a convertir:</label>
         <input type="text" id="valor" name="valor" required> 
         <label for="unidad">Unidad:</label>
         <input type="text" id="unidad" name="unidad" required>
-        <br><br>
+        <br>
         <h3>Elige la unidad para convertir</h3>
         <input type="radio" name="opcion" value="cm">cm
         <input type="radio" name="opcion" value="m">m
@@ -20,9 +19,11 @@
         <input type="radio" name="opcion" value="ft">ft
         <br><br>
         <button type="submit">Convertir</button>
-    </from>
-    {% if resultado %}
-        <h2>{{ resultado }}</h2>
+    </form>
+
+    {% if resultado is not none %}
+        <h2>Resultado:</h2>
+        <p>{{ resultado }}</p>
     {% endif %}
 </body>
 </html>
